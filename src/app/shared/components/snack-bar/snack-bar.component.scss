@@ -1,0 +1,28 @@
+@import "../../styles/theme.scss";
+
+::ng-deep .mat-snack-bar-container {
+  background: $color-white;
+  color: $color-black;
+}
+
+.success h1 {
+  color: $btn-success;
+}
+
+.error h1 {
+  color: $btn-error;
+}
+
+.snack-bar-wrapper {
+  height: 110px;
+  width: 400px;
+  max-width: 400px;
+  overflow: hidden;
+}
+
+fa-icon {
+  position: absolute;
+  right: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}

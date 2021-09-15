@@ -1,0 +1,9 @@
+<div
+  @snackBar
+  class="snack-bar-wrapper"
+  [ngClass]="{ success: data.type === 'success', error: data.type === 'error' }"
+>
+  <fa-icon [icon]="faIcons.faTimes" (click)="snackBarRef.dismiss()"></fa-icon>
+  <h1>{{ data.title | translate }}</h1>
+  <p>{{ data.text | translate }}</p>
+</div>
